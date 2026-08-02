@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Fordjour Decor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .contact-section {
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fffbe6;
+        padding: 40px 10px;
+      }
+      .contact-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+        padding: 2.5rem 2rem;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      .contact-card h2 {
+        color: #f7cd00;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+      .contact-card label {
+        font-weight: 500;
+        margin-bottom: 0.3rem;
+        color: #333;
+      }
+      .contact-card input,
+      .contact-card textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #eee;
+        border-radius: 6px;
+        font-size: 1rem;
+        margin-bottom: 0.7rem;
+        background: #fff;
+        resize: vertical;
+      }
+      .contact-card textarea {
+        min-height: 100px;
+      }
+      .contact-card button {
+        background: #f7cd00;
+        color: #333;
+        border: none;
+        padding: 0.9rem 0;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s;
+      }
+      .contact-card button:hover {
+        background: #333;
+        color: #f7cd00;
+      }
+      .contact-info {
+        text-align: center;
+        margin-top: 2rem;
+        color: #333;
+      }
+      .contact-info i {
+        color: #f7cd00;
+        margin-right: 0.5rem;
+      }
+      @media (max-width: 600px) {
+        .contact-card {
+          padding: 1.2rem 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="index.html">
+        <div class="logo">
+          <i class="bx bx-paint-roll"></i>
+          <span>Fordjour Decor</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation">
+        <i class="bx bx-menu"></i>
+      </button>
+      <div class="links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Our Works</a></li>
+          <li><a href="#" class="hire">Hire Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="contact-section">
+      <form class="contact-card">
+        <h2>Contact Us</h2>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p><i class="bx bx-envelope"></i> Email: info@fordjourdecor.com</p>
+        <p><i class="bx bx-phone"></i> Phone: +23324 1581 450</p>
+        <p><i class="bx bx-map"></i> Location: Accra, Ghana</p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
