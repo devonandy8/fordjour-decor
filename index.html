@@ -3,126 +3,302 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fordjour Decor — Professional interior and exterior painting, wallpaper installation, and decoration services in Accra, Ghana."
+    />
+    <title>Fordjour Decor | Professional Painting Services</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <title>Fourdjour Decor</title>
   </head>
   <body>
     <nav class="nav">
-      <a href="index.html">
-        <div class="logo">
-          <i class="bx bx-paint-roll"></i>
-          <span>Fordjour Decor</span>
-        </div>
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="bx bx-paint-roll"></i></div>
+        <span>Fordjour</span> Decor
       </a>
-      <button class="nav-toggle" aria-label="Open navigation">
+      <button class="nav-toggle" aria-label="Toggle navigation">
         <i class="bx bx-menu"></i>
       </button>
-      <div class="links">
+      <div class="nav-links">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html">Our Works</a></li>
-          <li><a href="hire.html" class="hire">Hire Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="hire.html" class="btn-nav">Get a Quote</a></li>
         </ul>
       </div>
     </nav>
-    <div class="hero">
-      <div class="heroMain">
-        <div class="left">
-          <div class="herotxt1">Welcome to Fourdjour Decor</div>
+
+    <header class="hero">
+      <div class="container hero-content fade-in">
+        <div class="hero-badge">
+          <i class="bx bx-star"></i>
+          Trusted Painters in Accra, Ghana
+        </div>
+        <h1>Transform Your Space with <em>Expert</em> Painting</h1>
+        <p>
+          From vibrant interior finishes to durable exterior coatings, we bring
+          color and life to homes and businesses across Ghana with precision,
+          care, and lasting results.
+        </p>
+        <div class="hero-actions">
+          <a href="hire.html" class="btn btn-primary">
+            Request a Free Quote
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+          <a href="portfolio.html" class="btn btn-outline">View Our Work</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>150+</strong>
+            <span>Projects Completed</span>
+          </div>
+          <div class="hero-stat">
+            <strong>10+</strong>
+            <span>Years Experience</span>
+          </div>
+          <div class="hero-stat">
+            <strong>100%</strong>
+            <span>Client Satisfaction</span>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="section-1">
-      <h1>Explore our services</h1>
-      <p>
-        We provide top-notch interior and exterior decoration services to
-        transform your spaces into stunning environments that reflect your
-        style.
-      </p>
-      <ul>
-        <li>
-          <div class="card">
-            <div class="card-background"></div>
-            <video class="card-video" muted loop>
+    </header>
+
+    <section class="services">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">What We Do</span>
+          <h2 class="section-title">Our Painting Services</h2>
+          <p class="section-desc">
+            Whether it's a single room refresh or a full property makeover, our
+            skilled team delivers flawless finishes every time.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card fade-in">
+            <video class="card-video" muted loop playsinline>
               <source src="IMG_1916.Mp4" type="video/mp4" />
             </video>
-            <div class="card-content">
-              <h3>EXTERIOR PAINTING</h3>
+            <div class="service-card-overlay">
+              <div class="service-icon"><i class="bx bx-home-alt"></i></div>
+              <h3>Exterior Painting</h3>
               <p>
-                We offer full/partial painting services to all types of projects
+                Weather-resistant coatings that protect and beautify your
+                property's exterior for years to come.
               </p>
             </div>
           </div>
-        </li>
-        <li>
-          <div class="card">
-            <div class="card-background"></div>
-            <video class="card-video" muted loop>
+          <div class="service-card fade-in">
+            <video class="card-video" muted loop playsinline>
               <source src="IMG_0426.MP4" type="video/mp4" />
             </video>
-            <div class="card-content">
-              <h3>WALLPAPER INSTALLATION</h3>
+            <div class="service-card-overlay">
+              <div class="service-icon"><i class="bx bx-images"></i></div>
+              <h3>Wallpaper Installation</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Reiciendis ad esse error exercitationem tempora rem
+                Premium wallpaper application with precise alignment and a
+                seamless, professional finish.
               </p>
             </div>
           </div>
-        </li>
-        <li>
-          <div class="card">
-            <div class="card-background"></div>
-            <video class="card-video" muted loop>
-              <source src="IMG_4322.MP4" type="video/mp4" />
+          <div class="service-card fade-in">
+            <video class="card-video" muted loop playsinline>
+              <source src="IMG_2030.MP4" type="video/mp4" />
             </video>
-            <div class="card-content">
-              <h3>INTERIOR PAINTING</h3>
+            <div class="service-card-overlay">
+              <div class="service-icon"><i class="bx bx-brush"></i></div>
+              <h3>Interior Painting</h3>
               <p>
-                We offer full/partial painting services to all types of projects
+                Full and partial interior painting for homes, offices, and
+                commercial spaces of every size.
               </p>
             </div>
-            w
           </div>
-        </li>
-      </ul>
-    </div>
-    <div class="section-2">
-      <h2>Testimonials</h2>
+        </div>
+      </div>
+    </section>
 
-      <div class="testimonial">
-        <img src="WhatsApp Image 2025-10-01 at 10.41.32 AM (3).jpeg" alt="#" />
-        <p>
-          "The team was professional, punctual, and the results were stunning.
-          Will definitely hire again!"
-          <br />
-          <span>- Satisfied Client</span>
-        </p>
+    <section class="why-us">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Why Choose Us</span>
+          <h2 class="section-title">The Fordjour Difference</h2>
+          <p class="section-desc">
+            We combine craftsmanship with reliability to deliver results you
+            can see and trust.
+          </p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card fade-in">
+            <i class="bx bx-check-shield"></i>
+            <h3>Quality Materials</h3>
+            <p>
+              We use premium paints and supplies for vibrant color and long-lasting
+              durability.
+            </p>
+          </div>
+          <div class="why-card fade-in">
+            <i class="bx bx-time-five"></i>
+            <h3>On-Time Delivery</h3>
+            <p>
+              We respect your schedule and complete every project within the agreed
+              timeline.
+            </p>
+          </div>
+          <div class="why-card fade-in">
+            <i class="bx bx-group"></i>
+            <h3>Skilled Team</h3>
+            <p>
+              Our experienced painters and decorators bring years of hands-on
+              expertise to every job.
+            </p>
+          </div>
+          <div class="why-card fade-in">
+            <i class="bx bx-wallet"></i>
+            <h3>Fair Pricing</h3>
+            <p>
+              Transparent quotes with no hidden fees — quality work at competitive
+              rates.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="testimonial">
-        <img src="WhatsApp Image 2025-10-01 at 10.41.32 AM (2).jpeg" alt="#" />
-        <p>
-          "The team was professional, punctual, and the results were stunning.
-          Will definitely hire again!"
-          <br />
-          <span>- Satisfied Client</span>
-        </p>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Testimonials</span>
+          <h2 class="section-title">What Our Clients Say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>
+              "The team was professional, punctual, and the results were
+              absolutely stunning. Our home looks brand new. Will definitely hire
+              again!"
+            </blockquote>
+            <div class="testimonial-author">
+              <img
+                src="WhatsApp Image 2025-10-01 at 10.41.32 AM (3).jpeg"
+                alt="Client"
+              />
+              <div>
+                <strong>Kwame A.</strong>
+                <span>Homeowner, Madina</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>
+              "Excellent exterior painting job. They were careful with our
+              landscaping and left the site spotless. Highly recommend Fordjour
+              Decor!"
+            </blockquote>
+            <div class="testimonial-author">
+              <img
+                src="WhatsApp Image 2025-10-01 at 10.41.32 AM (2).jpeg"
+                alt="Client"
+              />
+              <div>
+                <strong>Ama O.</strong>
+                <span>Business Owner, East Legon</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote>
+              "From the first consultation to the final coat, everything was
+              smooth and professional. The wallpaper installation exceeded our
+              expectations."
+            </blockquote>
+            <div class="testimonial-author">
+              <img
+                src="WhatsApp Image 2025-10-01 at 10.41.32 AM (1).jpeg"
+                alt="Client"
+              />
+              <div>
+                <strong>David M.</strong>
+                <span>Property Manager, Adenta</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="testimonial">
-        <img src="WhatsApp Image 2025-10-01 at 10.41.32 AM (1).jpeg" alt="#" />
+    </section>
+
+    <section class="cta-banner">
+      <div class="container fade-in">
+        <h2>Ready to Refresh Your Space?</h2>
         <p>
-          "The team was professional, punctual, and the results were stunning.
-          Will definitely hire again!"
-          <br />
-          <span>- Satisfied Client</span>
+          Get a free, no-obligation quote for your next painting project today.
         </p>
+        <a href="hire.html" class="btn">Get Your Free Quote</a>
       </div>
-    </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <div class="logo-icon"><i class="bx bx-paint-roll"></i></div>
+              <span>Fordjour</span> Decor
+            </a>
+            <p>
+              Professional painting and decoration services across Accra and
+              beyond. Quality craftsmanship you can trust.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="portfolio.html">Our Works</a></li>
+              <li><a href="hire.html">Get a Quote</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="hire.html">Interior Painting</a></li>
+              <li><a href="hire.html">Exterior Painting</a></li>
+              <li><a href="hire.html">Wallpaper Installation</a></li>
+              <li><a href="hire.html">Decor Consultation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="tel:+233241581450">+233 24 158 1450</a></li>
+              <li>
+                <a href="mailto:info@fordjourdecor.com">info@fordjourdecor.com</a>
+              </li>
+              <li>Accra, Ghana</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Fordjour Decor. All rights reserved.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>

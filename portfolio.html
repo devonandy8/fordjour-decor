@@ -3,167 +3,239 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="about.css" />
+    <meta
+      name="description"
+      content="Browse Fordjour Decor's portfolio of completed painting and decoration projects across Accra and Ghana."
+    />
+    <title>Our Works | Fordjour Decor</title>
+    <link rel="stylesheet" href="styles.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="portfolio.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <nav class="nav">
-      <a href="index.html">
-        <div class="logo">
-          <i class="bx bx-paint-roll"></i>
-          <span>Fordjour Decor</span>
-        </div>
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="bx bx-paint-roll"></i></div>
+        <span>Fordjour</span> Decor
       </a>
-      <button class="nav-toggle" aria-label="Open navigation">
+      <button class="nav-toggle" aria-label="Toggle navigation">
         <i class="bx bx-menu"></i>
       </button>
-      <div class="links">
+      <div class="nav-links">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html" class="active">Our Works</a></li>
-          <li><a href="hire.html" class="hire">Hire Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="hire.html" class="btn-nav">Get a Quote</a></li>
         </ul>
       </div>
     </nav>
 
-    <h1 style="margin-top: 20px">Our Works</h1>
-    <span>Explore some of our finished works in this section</span>
-    <div class="cards">
-      <div class="portfolio-card">
-        <div class="card">
-          <video class="card-video" muted loop>
-            <source src="IMG_4322.MP4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="jobInfo">
-          <span class="bold" style="font-weight: 700"
-            ><b>Job Type: </b> Painting</span
-          >
+    <header class="page-header">
+      <div class="container fade-in">
+        <span class="section-label">Portfolio</span>
+        <h1>Our Completed Projects</h1>
+        <p>
+          Explore a selection of our finished painting and decoration work
+          across Accra and beyond.
+        </p>
+      </div>
+    </header>
 
-          <h4><b>📍 Location:</b> Accra, Madina</h4>
+    <section>
+      <div class="container">
+        <div class="portfolio-filters fade-in">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="interior">Interior</button>
+          <button class="filter-btn" data-filter="exterior">Exterior</button>
+          <button class="filter-btn" data-filter="commercial">Commercial</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-item fade-in" data-category="interior">
+            <div class="portfolio-media">
+              <video class="card-video" muted loop playsinline>
+                <source src="IMG_2030.MP4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Interior Painting</span>
+              <h3>Residential Living Room</h3>
+              <p><i class="bx bx-map"></i> Accra, North Legon</p>
+            </div>
+          </article>
+
+          <article class="portfolio-item fade-in" data-category="exterior">
+            <div class="portfolio-media">
+              <video class="card-video" muted loop playsinline>
+                <source src="IMG_3647.MP4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Exterior Painting</span>
+              <h3>Home Exterior Refresh</h3>
+              <p><i class="bx bx-map"></i> Kumasi, Suame</p>
+            </div>
+          </article>
+
+          <article class="portfolio-item fade-in" data-category="interior">
+            <div class="portfolio-media">
+              <video class="card-video" muted loop playsinline>
+                <source src="IMG_2899.MP4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Interior Painting</span>
+              <h3>Bedroom Makeover</h3>
+              <p><i class="bx bx-map"></i> Accra, North Legon</p>
+            </div>
+          </article>
+
+          <article class="portfolio-item fade-in" data-category="commercial">
+            <div class="portfolio-media">
+              <video class="card-video" muted loop playsinline>
+                <source src="IMG_2237.MP4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Commercial</span>
+              <h3>Office Space Painting</h3>
+              <p><i class="bx bx-map"></i> Accra, Kpone</p>
+            </div>
+          </article>
+
+          <article class="portfolio-item fade-in" data-category="exterior">
+            <div class="portfolio-media">
+              <video class="card-video" muted loop playsinline>
+                <source src="IMG_1981.Mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Exterior Painting</span>
+              <h3>Property Exterior Coating</h3>
+              <p><i class="bx bx-map"></i> Accra, Adenta</p>
+            </div>
+          </article>
+
+          <article class="portfolio-item fade-in" data-category="interior">
+            <div class="portfolio-media">
+              <video class="card-video" muted loop playsinline>
+                <source src="IMG_0329.MP4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Interior Painting</span>
+              <h3>Luxury Interior Finish</h3>
+              <p><i class="bx bx-map"></i> Accra, Cantonments</p>
+            </div>
+          </article>
+
+          <article class="portfolio-item fade-in" data-category="interior">
+            <div class="portfolio-media">
+              <video class="card-video" muted loop playsinline>
+                <source src="IMG_0204.MP4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Interior Painting</span>
+              <h3>Full Home Interior</h3>
+              <p><i class="bx bx-map"></i> Accra, Adenta</p>
+            </div>
+          </article>
+
+          <article class="portfolio-item fade-in" data-category="exterior">
+            <div class="portfolio-media">
+              <video class="card-video" muted loop playsinline>
+                <source src="IMG_0192.MP4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Exterior Painting</span>
+              <h3>Residential Exterior</h3>
+              <p><i class="bx bx-map"></i> Accra, Adenta</p>
+            </div>
+          </article>
+
+          <article class="portfolio-item fade-in" data-category="commercial">
+            <div class="portfolio-media">
+              <video class="card-video" muted loop playsinline>
+                <source src="IMG_0331.MP4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="portfolio-info">
+              <span class="portfolio-tag">Commercial</span>
+              <h3>Retail Space Decoration</h3>
+              <p><i class="bx bx-map"></i> Accra, Madina</p>
+            </div>
+          </article>
         </div>
       </div>
-      <div class="portfolio-card">
-        <div class="card">
-          <video class="card-video" muted loop>
-            <source src="IMG_3647.MP4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="jobInfo">
-          <span class="bold" style="font-weight: 700"
-            ><b>Job Type: </b> Painting</span
-          >
+    </section>
 
-          <h4><b>📍 Location:</b> Kumasi, Suame</h4>
+    <section class="cta-banner">
+      <div class="container fade-in">
+        <h2>Want Results Like These?</h2>
+        <p>Tell us about your project and we'll make it happen.</p>
+        <a href="hire.html" class="btn">Start Your Project</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <div class="logo-icon"><i class="bx bx-paint-roll"></i></div>
+              <span>Fordjour</span> Decor
+            </a>
+            <p>
+              Professional painting and decoration services across Accra and
+              beyond. Quality craftsmanship you can trust.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="portfolio.html">Our Works</a></li>
+              <li><a href="hire.html">Get a Quote</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="hire.html">Interior Painting</a></li>
+              <li><a href="hire.html">Exterior Painting</a></li>
+              <li><a href="hire.html">Wallpaper Installation</a></li>
+              <li><a href="hire.html">Decor Consultation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="tel:+233241581450">+233 24 158 1450</a></li>
+              <li>
+                <a href="mailto:info@fordjourdecor.com">info@fordjourdecor.com</a>
+              </li>
+              <li>Accra, Ghana</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Fordjour Decor. All rights reserved.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
+          </div>
         </div>
       </div>
-      <div class="portfolio-card">
-        <div class="card">
-          <video class="card-video" muted loop>
-            <source src="IMG_2899.MP4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="jobInfo">
-          <span class="bold" style="font-weight: 700"
-            ><b>Job Type: </b> Painting</span
-          >
+    </footer>
 
-          <h4><b>📍 Location:</b> Accra, North Legon</h4>
-        </div>
-      </div>
-      <div class="portfolio-card">
-        <div class="card">
-          <video class="card-video" muted loop>
-            <source src="IMG_2030.MP4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="jobInfo">
-          <span class="bold" style="font-weight: 700"
-            ><b>Job Type: </b> Painting</span
-          >
-
-          <h4><b>📍 Location:</b> Accra, North Legon</h4>
-        </div>
-      </div>
-      <div class="portfolio-card">
-        <div class="card">
-          <video class="card-video" muted loop>
-            <source src="IMG_2237.MP4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="jobInfo">
-          <span class="bold" style="font-weight: 700"
-            ><b>Job Type: </b> Painting</span
-          >
-
-          <h4><b>📍 Location:</b> Accra, Kpone</h4>
-        </div>
-      </div>
-      <div class="portfolio-card">
-        <div class="card">
-          <video class="card-video" muted loop>
-            <source src="IMG_1981.Mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="jobInfo">
-          <span class="bold" style="font-weight: 700"
-            ><b>Job Type: </b> Painting</span
-          >
-
-          <h4><b>📍 Location:</b> Accra, Adenta</h4>
-        </div>
-      </div>
-      <div class="portfolio-card">
-        <div class="card">
-          <video class="card-video" muted loop>
-            <source src="IMG_0329.MP4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="jobInfo">
-          <span class="bold" style="font-weight: 700"
-            ><b>Job Type: </b> Painting</span
-          >
-
-          <h4><b>📍 Location:</b> Accra, Cantonments</h4>
-        </div>
-      </div>
-      <div class="portfolio-card">
-        <div class="card">
-          <video class="card-video" muted loop>
-            <source src="IMG_0204.MP4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="jobInfo">
-          <span class="bold" style="font-weight: 700"
-            ><b>Job Type: </b> Painting</span
-          >
-
-          <h4><b>📍 Location:</b> Accra, Adenta</h4>
-        </div>
-      </div>
-      <div class="portfolio-card">
-        <div class="card">
-          <video class="card-video" muted loop>
-            <source src="IMG_0192.MP4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="jobInfo">
-          <span class="bold" style="font-weight: 700"
-            ><b>Job Type: </b> Painting</span
-          >
-
-          <h4><b>📍 Location:</b> Accra, Adenta</h4>
-        </div>
-      </div>
-    </div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -3,128 +3,162 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Fordjour Decor for painting and decoration services in Accra, Ghana."
+    />
     <title>Contact Us | Fordjour Decor</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <style>
-      .contact-section {
-        min-height: 80vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: #fffbe6;
-        padding: 40px 10px;
-      }
-      .contact-card {
-        background: #fff;
-        border-radius: 12px;
-        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
-        padding: 2.5rem 2rem;
-        max-width: 400px;
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
-      }
-      .contact-card h2 {
-        color: #f7cd00;
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-        text-align: center;
-      }
-      .contact-card label {
-        font-weight: 500;
-        margin-bottom: 0.3rem;
-        color: #333;
-      }
-      .contact-card input,
-      .contact-card textarea {
-        width: 100%;
-        padding: 0.8rem;
-        border: 1px solid #eee;
-        border-radius: 6px;
-        font-size: 1rem;
-        margin-bottom: 0.7rem;
-        background: #fff;
-        resize: vertical;
-      }
-      .contact-card textarea {
-        min-height: 100px;
-      }
-      .contact-card button {
-        background: #f7cd00;
-        color: #333;
-        border: none;
-        padding: 0.9rem 0;
-        border-radius: 6px;
-        font-weight: bold;
-        font-size: 1.1rem;
-        cursor: pointer;
-        transition: background 0.2s, color 0.2s;
-      }
-      .contact-card button:hover {
-        background: #333;
-        color: #f7cd00;
-      }
-      .contact-info {
-        text-align: center;
-        margin-top: 2rem;
-        color: #333;
-      }
-      .contact-info i {
-        color: #f7cd00;
-        margin-right: 0.5rem;
-      }
-      @media (max-width: 600px) {
-        .contact-card {
-          padding: 1.2rem 0.5rem;
-        }
-      }
-    </style>
   </head>
   <body>
     <nav class="nav">
-      <a href="index.html">
-        <div class="logo">
-          <i class="bx bx-paint-roll"></i>
-          <span>Fordjour Decor</span>
-        </div>
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="bx bx-paint-roll"></i></div>
+        <span>Fordjour</span> Decor
       </a>
-      <button class="nav-toggle" aria-label="Open navigation">
+      <button class="nav-toggle" aria-label="Toggle navigation">
         <i class="bx bx-menu"></i>
       </button>
-      <div class="links">
+      <div class="nav-links">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html" class="active">Contact Us</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html">Our Works</a></li>
-          <li><a href="#" class="hire">Hire Me</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="hire.html" class="btn-nav">Get a Quote</a></li>
         </ul>
       </div>
     </nav>
-    <section class="contact-section">
-      <form class="contact-card">
-        <h2>Contact Us</h2>
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <div class="contact-info">
-        <p><i class="bx bx-envelope"></i> Email: info@fordjourdecor.com</p>
-        <p><i class="bx bx-phone"></i> Phone: +23324 1581 450</p>
-        <p><i class="bx bx-map"></i> Location: Accra, Ghana</p>
+
+    <header class="page-header">
+      <div class="container fade-in">
+        <span class="section-label">Get in Touch</span>
+        <h1>Contact Us</h1>
+        <p>
+          Have a question or want to discuss your project? We'd love to hear
+          from you.
+        </p>
+      </div>
+    </header>
+
+    <section class="form-section">
+      <div class="container">
+        <div class="form-layout">
+          <div class="form-card fade-in">
+            <h2>Send Us a Message</h2>
+            <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe" />
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@email.com" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+233 XX XXX XXXX" />
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required placeholder="Tell us about your project or question..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+                <i class="bx bx-send"></i>
+              </button>
+            </form>
+            <div class="form-success" id="contact-success">
+              <i class="bx bx-check-circle"></i>
+              <h3>Message Sent!</h3>
+              <p>Thank you for reaching out. We'll be in touch soon.</p>
+            </div>
+          </div>
+
+          <div class="form-sidebar fade-in">
+            <div class="info-card highlight">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p><a href="tel:+233241581450">+233 24 158 1450</a></p>
+            </div>
+            <div class="info-card">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p><a href="mailto:info@fordjourdecor.com">info@fordjourdecor.com</a></p>
+            </div>
+            <div class="info-card">
+              <i class="bx bx-map"></i>
+              <h3>Location</h3>
+              <p>Accra, Ghana</p>
+            </div>
+            <div class="info-card">
+              <i class="bx bx-time"></i>
+              <h3>Working Hours</h3>
+              <p>Mon – Sat: 7:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <div class="logo-icon"><i class="bx bx-paint-roll"></i></div>
+              <span>Fordjour</span> Decor
+            </a>
+            <p>
+              Professional painting and decoration services across Accra and
+              beyond. Quality craftsmanship you can trust.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="portfolio.html">Our Works</a></li>
+              <li><a href="hire.html">Get a Quote</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="hire.html">Interior Painting</a></li>
+              <li><a href="hire.html">Exterior Painting</a></li>
+              <li><a href="hire.html">Wallpaper Installation</a></li>
+              <li><a href="hire.html">Decor Consultation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="tel:+233241581450">+233 24 158 1450</a></li>
+              <li>
+                <a href="mailto:info@fordjourdecor.com">info@fordjourdecor.com</a>
+              </li>
+              <li>Accra, Ghana</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Fordjour Decor. All rights reserved.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="bx bxl-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
